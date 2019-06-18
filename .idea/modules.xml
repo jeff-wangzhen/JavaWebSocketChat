@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaWebSocketChat.iml" filepath="$PROJECT_DIR$/JavaWebSocketChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebContent/assets/ueditor/ueditor.iml" filepath="$PROJECT_DIR$/WebContent/assets/ueditor/ueditor.iml" />
+    </modules>
+  </component>
+</project>

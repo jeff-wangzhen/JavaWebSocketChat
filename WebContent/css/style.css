@@ -1,0 +1,248 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header.am-topbar.am-topbar-fixed-top {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: 0;
+}
+#collapse{
+    display: none;
+    cursor: pointer;
+}
+.triangle-up {
+    width: 0;
+    height: 0;
+    margin-top: 10px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #429842;
+    height: 30px;
+}
+.triangle-down {
+    width: 0;
+    height: 0;
+    margin-top: 10px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #429842;
+    height: 30px;
+}
+.rotate1{
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+    -webkit-transition:-webkit-transform 0.3s linear;
+    transition:transform 0.3s linear;
+}
+.rotate2{
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+    -webkit-transition:-webkit-transform 0.3s linear;
+    transition:transform 0.3s linear;
+}
+#collapse:hover{color:green;
+}
+
+@media(max-width: 640px){
+    #collapse{
+        display: block;
+        float: right;
+    }
+}
+.am-container {
+    margin: 0 auto;
+    padding: 0;
+}
+#collapse-head{
+    z-index: 1;background-color: whitesmoke;
+}
+#main {
+    width: 100%;
+}
+.am-comments-list .am-comment {
+    margin: 1.6rem 0 0;
+    list-style: none;
+
+    position: relative;
+}
+
+.gender{
+    display: inline-block;
+    left: 0;
+    right: auto;
+    position: absolute;
+    top: 25px;
+
+}
+.am-comment-flip .gender{
+    left: auto;
+    right: 0;
+
+}
+.userInfo{
+    left: 0;
+    right: auto;
+    display: none;
+    position: absolute;
+    border: solid 1px red;
+    top: 40px;
+    cursor: pointer;
+}
+.am-comment-flip .userInfo{
+    left: auto;
+    right: 0;
+}
+[ff="user-add-friend"]{
+    position: relative;
+    z-index: 1;
+}
+[ff="logined"]{
+    display: none;
+}
+.am-comment-bd img{max-width: 100%;}
+.userInfo:hover{
+    color:#4db14d;
+}
+@media only screen and (min-width: 641px){
+    .userInfo{
+        top: 50px;
+    }
+    .gender{
+
+        top: 35px;
+
+    }
+}
+.username,.usergender{
+    display: inline-block;
+}
+div[ff="id"]{
+    display: none;
+}
+#box {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 273px;
+}
+
+#ChatBox {
+    /* 	padding-bottom: 30vh; */
+    overflow: auto;
+    height: 100%;
+    margin: 0 auto;
+    border: solid 1px lightslategray;
+    /*transition: scrollTop 2s;*/
+}
+
+#editboxdiv {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 273px;
+    width: 100%;
+}
+
+#EditBox {
+    position: relative;
+    left: -50%;
+}
+#collapse-head{
+    display: block;
+}
+.am-topbar-right{
+    float: right; margin-right: 10px;
+}
+
+.edui-message-content {
+    /*float: right;*/
+}
+.edui-default[class|="edui-message"]{
+    /*position: fixed;*/
+    /*z-index: 9999;*/
+}
+*[id*="_toolbarboxouter"]{
+    max-height: 80px;  overflow-y: hidden;
+}
+
+*[id*="elementpath"]{display: none;
+}
+#edui1_toolbarbox{
+    position: static;height: 80px;
+}
+#myEditor {
+    max-height: 269px;
+    overflow-y: auto;
+}
+
+#edui2 {
+    max-height: 80px;
+    overflow-y: auto;
+}
+
+#send {
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border-radius:15px;
+}
+
+.am-u-lg-12 {
+    overflow-y: auto;
+}
+.am-topbar-collapse{
+    clear:none;
+    padding: 0;
+}
+#user-online{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 100%;
+}
+@media only screen and (max-width: 640px){
+
+    .am-topbar-collapse .am-btn, .am-topbar-collapse .am-topbar-btn {
+        display: inline-block;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 640px){
+
+    #collapse-head {
+   display:none;
+    }
+
+    #collapse-head div{
+        width:100%;
+    }
+    #collapse-head button{
+        width:100%;
+    }
+}
+header,#box,#editboxdiv{
+	display:none;
+}
+noscript{
+    font-size: 40px;
+    width: 100%;
+    z-index: 9999;
+    display:block;
+    background-color:#fff;
+    color:#000;
+    height: 100%;    text-align:center;
+}
+time[ff="msgdate"]{float:right;}
+#publicity{
+	    float: left;
+    display: inline-block;
+}

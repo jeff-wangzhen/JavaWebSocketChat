@@ -1,0 +1,65 @@
+.nav-tabs > li:last-child a {
+    margin-right: 0;
+}
+
+
+input[type="checkbox"]#cancelInput:checked {
+    background: #0ebeff;
+}
+
+input[type="checkbox"]#cancelInput {
+    font-size: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*width: 3.5em;*/
+    /*height: 1.5em;*/
+    background: #ddd;
+    border-radius: 3em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    height: 20px;
+    min-width: 30px;
+    top: 50%;
+    transform: translateY(20%);
+    width: 10%;
+}
+
+.aui-register-form-item {
+    line-height: 40px;
+    /* margin-bottom: 10px; */
+    font-size: 22px;
+    text-align: center;
+    color: aqua;
+}
+#portraitdiv label{
+    display: block;
+}
+input[type="checkbox"]#cancelInput:checked:after {
+    left: calc(100% - 1.5em);
+}
+
+input[type="checkbox"]#cancelInput:after {
+    position: absolute;
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 0 0 0.25em rgba(0, 0, 0, .3);
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, .3);
+    -webkit-transform: scale(.7);
+    transform: scale(.7);
+    left: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+@media ( min-width: 470px) {
+    .aui-register-popup {
+        width: 470px;
+    }
+}
