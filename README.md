@@ -20,6 +20,7 @@
     1. 代码来源 https://gitee.com/loopcc/WebSocketChat/ 
     2. 固定了底部输入框所占高度，让页面占满屏幕，聊天记录部分高度为屏幕高度-顶部高度-底部高度
     3. Ctrl+Enter快捷键发送消息，但是一定要先按下Ctrl再按Enter
+    4. 使用了 Web Worker 计算页面无操作时间，2分钟自动断开连接。
     
 2. 登录页面
     1. 代码来源 http://www.jsdaima.com/webpage/1009.html
